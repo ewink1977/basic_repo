@@ -1,0 +1,91 @@
+Steps to add to my 'basic_repo':
+
+From Git Bash:
+
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo
+$ touch test.html style.css test.js
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo
+$ git init
+Initialized empty Git repository in F:/CodingDojo/WebFundamentals/Git Assignments/basic_repo/.git/
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ code .
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+        test.html
+        test.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git add .
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git remote add origin https://github.com/ewink1977/basic_repo
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git commit -m "Added data to all files"
+[master (root-commit) e764741] Added data to all files
+ 3 files changed, 18 insertions(+)
+ create mode 100644 style.css
+ create mode 100644 test.html
+ create mode 100644 test.js
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 526 bytes | 263.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ewink1977/basic_repo
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git add .
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git commit -m "Added some more data!"
+[master 0fbb8c1] Added some more data!
+ 3 files changed, 6 insertions(+), 1 deletion(-)
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ touch steps.txt
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 520 bytes | 260.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ewink1977/basic_repo
+   e764741..0fbb8c1  master -> master
+
+ewink@MIKU MINGW64 /f/CodingDojo/WebFundamentals/Git Assignments/basic_repo (master)
+$
+
+
+I then added this file and pushed it up too!
